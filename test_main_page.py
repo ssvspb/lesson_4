@@ -1,5 +1,5 @@
 from .pages.main_page import MainPage
-from .pages.main_page import LoginPage
+from .pages.login_page import LoginPage
 
     
 def test_guest_should_see_login_link(browser):

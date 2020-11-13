@@ -21,10 +21,16 @@ class ProductPageLocators():
     PRODUCT_PRICE = (By.CSS_SELECTOR, "#content_inner .product_main > p.price_color")
     ADDING_PRODUCT_PRICE = (By.CSS_SELECTOR, ".alert-info > .alertinner strong")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
-    
+
+
+class BasketPageLocators():
+    BASKET_ROW = (By.CSS_SELECTOR, "#basket_formset .row")
+    EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
+
     
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_invalid")
+    BASKET_LINK = (By.CSS_SELECTOR, ".basket-mini .btn-default[href]")
 
 

@@ -39,3 +39,14 @@ class ProductPage(BasePage):
     def should_be_disappeared_message(self):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE),\
             "Success message is presented, but should be diappeared"
+            
+    def should_be_right_product_name_in_adding_to_basket_message(self):
+        product_name = self.get_product_name()
+        adding_product_name = self.get_adding_product_name()
+        assert adding_product_name == product_name, "Wrong product name in adding to basket message"
+
+    def should_be_right_product_price_in_adding_to_basket_message(self):
+        product_price = self.get_product_price()
+        adding_product_price = self.get_adding_product_price()
+        assert adding_product_price == product_price, "Wrong product price in adding to basket message"
+        
